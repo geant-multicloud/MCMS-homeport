@@ -8,7 +8,8 @@ COPY package.json yarn.lock /app/
 # Python is not installed on alpine, therefore we need to install it manually.
 # --no-cache: download package index on-the-fly, no need to cleanup afterwards
 # --virtual: bundle packages, remove whole bundle at once, when done
-RUN apk add --no-cache --virtual python make g++ \
+RUN apk add --no-cache --virtual make g++
+RUN apk add --no-cache --virtual python
 RUN which python
 RUN which python2
 RUN yarn install --frozen-lockfile
