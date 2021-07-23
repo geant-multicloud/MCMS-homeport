@@ -10,7 +10,6 @@ COPY package.json yarn.lock /app/
 # --virtual: bundle packages, remove whole bundle at once, when done
 RUN apk add --no-cache --virtual make g++
 RUN apk add --no-cache --virtual python
-RUN which python
 RUN which python2
 RUN yarn install --frozen-lockfile
 
