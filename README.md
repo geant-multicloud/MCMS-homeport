@@ -1,6 +1,6 @@
 # Introduction
 
-MCMS HomePort is a web-based client based on  [Waldur MasterMind][1].
+MCMS HomePort is a web-based client based on  [Waldur MasterMind][1] by OpenNode LLC.
 It uses yarn for dependency management and webpack as module bundler.
 
 ## Minimal requirements
